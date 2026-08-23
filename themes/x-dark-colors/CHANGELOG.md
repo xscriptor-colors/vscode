@@ -3,6 +3,12 @@
 All important modifications to this VSCode theme collection will be documented in this file.
 
 ---
+## [1.2.1] - 2026-08-23
+
+### Fixed
+- Invalid JSON (trailing comma before the closing brace of the `colors` block) in X Milán, X Medellín, X Frankfurt and X Almería — these themes now load correctly as valid color themes.
+- `repository.directory` in package.json pointed to a nonexistent `vscodethemes/xdarkcolors` path, corrected to `themes/x-dark-colors`.
+
 ## [1.2.0] - 2026-04-01
 ### Added
 - Enhanced visual hierarchy with bracket pair guides and sticky scroll support

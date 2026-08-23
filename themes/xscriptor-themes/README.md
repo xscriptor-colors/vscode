@@ -22,11 +22,11 @@
 <details>
 <summary><b>Static previews</b></summary>
 
-<p align="center"><img src="https://raw.githubusercontent.com/xscriptor/vscode/refs/heads/main/themes/xscriptor-themes/screenshots/xtvsc01.jpg" alt="Xscriptor Themes preview 1" width="900" /></p>
-<p align="center"><img src="https://raw.githubusercontent.com/xscriptor/vscode/refs/heads/main/themes/xscriptor-themes/screenshots/xtvsc03.jpg" alt="Xscriptor Themes preview 3" width="900" /></p>
-<p align="center"><img src="https://raw.githubusercontent.com/xscriptor/vscode/refs/heads/main/themes/xscriptor-themes/screenshots/xtvsc02.jpg" alt="Xscriptor Themes preview 4" width="900" /></p>
-<p align="center"><img src="https://raw.githubusercontent.com/xscriptor/vscode/refs/heads/main/themes/xscriptor-themes/screenshots/xtvsc05.jpg" alt="Xscriptor Themes preview 5" width="900" /></p>
-<p align="center"><img src="https://raw.githubusercontent.com/xscriptor/vscode/refs/heads/main/themes/xscriptor-themes/screenshots/xtvsc04.jpg" alt="Xscriptor Themes preview 6" width="900" /></p>
+<p align="center"><img src="https://raw.githubusercontent.com/xscriptor-colors/vscode/refs/heads/main/themes/xscriptor-themes/screenshots/xtvsc01.jpg" alt="Xscriptor Themes preview 1" width="900" /></p>
+<p align="center"><img src="https://raw.githubusercontent.com/xscriptor-colors/vscode/refs/heads/main/themes/xscriptor-themes/screenshots/xtvsc03.jpg" alt="Xscriptor Themes preview 3" width="900" /></p>
+<p align="center"><img src="https://raw.githubusercontent.com/xscriptor-colors/vscode/refs/heads/main/themes/xscriptor-themes/screenshots/xtvsc02.jpg" alt="Xscriptor Themes preview 4" width="900" /></p>
+<p align="center"><img src="https://raw.githubusercontent.com/xscriptor-colors/vscode/refs/heads/main/themes/xscriptor-themes/screenshots/xtvsc05.jpg" alt="Xscriptor Themes preview 5" width="900" /></p>
+<p align="center"><img src="https://raw.githubusercontent.com/xscriptor-colors/vscode/refs/heads/main/themes/xscriptor-themes/screenshots/xtvsc04.jpg" alt="Xscriptor Themes preview 6" width="900" /></p>
 
 </details>
 
@@ -110,31 +110,31 @@
 </ol>
 
 <p>Terminal install (VSIX):</p>
-<pre><code>code --install-extension xscriptor-themes-1.1.3.vsix</code></pre>
+<pre><code>code --install-extension xscriptor-themes-1.1.5.vsix</code></pre>
 
 <h2 align="center" align="center">Accessibility</h2>
 <p>
-  All themes meet WCAG 2.1 AA contrast checks for the audited UI pairs: <a href="https://github.com/xscriptor/vscode/blob/main/themes/xscriptor-themes/reports/contrast.json">contrast.json</a>
+  All themes meet WCAG 2.1 AA contrast checks for the audited UI pairs: <a href="https://github.com/xscriptor-colors/vscode/blob/main/themes/xscriptor-themes/reports/contrast.json">contrast.json</a>
 </p>
 
 <h2 align="center" align="center">Security</h2>
 <p>
   Automated OSV dependency scan (SARIF):
-  <a href="https://github.com/xscriptor/vscode/blob/main/themes/xscriptor-themes/reports/osv-results-xscriptor-themes.sarif">osv-results-xscriptor-themes.sarif</a>.
+  <a href="https://github.com/xscriptor-colors/vscode/blob/main/themes/xscriptor-themes/reports/osv-results-xscriptor-themes.sarif">osv-results-xscriptor-themes.sarif</a>.
   The latest report shows no known vulnerabilities in declared dependencies.
 </p>
 
 <h2 align="center" align="center">Related Documents</h2>
 
 <ul>
-  <li><a href="https://github.com/xscriptor/vscode/blob/main/themes/xscriptor-themes/LICENSE">License</a></li>
-  <li><a href="https://github.com/xscriptor/vscode/blob/main/themes/xscriptor-themes/docs/accessibility.md">Accessibility</a></li>
-  <li><a href="https://github.com/xscriptor/vscode/blob/main/themes/xscriptor-themes/reports/contrast.json">Contrast Report</a></li>
-  <li><a href="https://github.com/xscriptor/vscode/blob/main/themes/xscriptor-themes/reports/osv-results-xscriptor-themes.sarif">OSV Scan Report</a></li>
-  <li><a href="https://github.com/xscriptor/vscode/blob/main/CODE_OF_CONDUCT.md">Code of Conduct</a></li>
-  <li><a href="https://github.com/xscriptor/vscode/blob/main/CONTRIBUTING.md">Contributions</a></li>
-  <li><a href="https://github.com/xscriptor/vscode/blob/main/ROADMAP.md">Roadmap</a></li>
-  <li><a href="https://github.com/xscriptor/vscode/blob/main/colors.md">Colors</a></li>
+  <li><a href="https://github.com/xscriptor-colors/vscode/blob/main/themes/xscriptor-themes/LICENSE">License</a></li>
+  <li><a href="https://github.com/xscriptor-colors/vscode/blob/main/themes/xscriptor-themes/docs/accessibility.md">Accessibility</a></li>
+  <li><a href="https://github.com/xscriptor-colors/vscode/blob/main/themes/xscriptor-themes/reports/contrast.json">Contrast Report</a></li>
+  <li><a href="https://github.com/xscriptor-colors/vscode/blob/main/themes/xscriptor-themes/reports/osv-results-xscriptor-themes.sarif">OSV Scan Report</a></li>
+  <li><a href="https://github.com/xscriptor-colors/vscode/blob/main/CODE_OF_CONDUCT.md">Code of Conduct</a></li>
+  <li><a href="https://github.com/xscriptor-colors/vscode/blob/main/CONTRIBUTING.md">Contributions</a></li>
+  <li><a href="https://github.com/xscriptor-colors/vscode/blob/main/ROADMAP.md">Roadmap</a></li>
+  <li><a href="https://github.com/xscriptor-colors/vscode/blob/main/colors.md">Colors</a></li>
 </ul>
 
 
@@ -142,7 +142,7 @@
 <div id="x" align="center">
 <h2 align="center">X</h2>
 
-<a href="https://dev.xscriptor.com">Web
+<a href="https://xscriptor.io">Web
 </a>
  & 
 <a href="https://github.com/xscriptor">

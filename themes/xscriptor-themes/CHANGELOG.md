@@ -3,11 +3,26 @@
 All important modifications to this VSCode theme collection will be documented in this file.
 
 ---
+## [1.1.5] - 2026-08-23
+
+### Added
+- Completed every theme's color key set to match the current official VS Code theme color reference (each theme now ships ~905 keys, zero missing). New keys include `editorGhostText.*`, `terminalSymbolIcon.*`, `terminalStickyScroll.*`, `chat.*`, `inlineChat.*`, `inlineEdit.*`, `testing.*`, `statusBarItem.*`, `checkbox.*`, `radio.*`, `commandCenter.*`, `menu.*`, `minimap*`, `scmGraph.*` and more — every value derived from each theme's own palette (foreground, accent, semantic colors, alphas).
+- All 12 theme files extended with the same full key set, preserving each theme's original colors, formatting and ordering.
+
+### Changed
+- **Miami**: syntax purple switched from the dark `#D36CFF` to Paris' light purple `#C4BDFF` across text/code keys (constants, entities, variables, decorators, region.purplish), keeping background-derived keys untouched.
+- **Miami**: reworked palette to a corrected neon scheme — red `#FF5C8A`, green `#45E8B0`, blue `#2FD4FF`, yellow `#FFE066`, purple `#C77DFF`, foreground `#F2F0FF`.
+- **Miami**: `charts.orange` fixed from green neon `#00FFA8` to a real orange `#FF9E64`.
+- **Miami**: `terminal.ansiBlue` fixed (was green, now `#2FD4FF`).
+
+### Fixed
+- Miami: misnamed orange and terminal blue that rendered as green.
+
 ## [1.1.4] - 2026-06-23
 
 ### Added
 - New **Miami** theme (dark, vibrant neon palette) with matching internal name.
-- **11 palette-based icon themes** generated programmatically from colors.md palettes (X, Madrid, Oslo, Praha, Berlin, London, Helsinki, Lahabana, Miami, Paris, Bogotá, Tokio). Each theme cycles its 6 palette colors across 44 language + 33 special file SVGs with contrast-verified text (#0a0a0a or #f7f1ff per WCAG AA).
+- **11 palette-based icon themes** generated programmatically from colors.md palettes (X, Madrid, Oslo, Praha, Berlin, London, Helsinki, Lahabana, Miami, Paris, Bogota, Tokio). Each theme cycles its 6 palette colors across 44 language + 33 special file SVGs with contrast-verified text (#0a0a0a or #f7f1ff per WCAG AA).
 - **Colors** icon theme: circles with language brand colors and circle markers cycling through the X palette.
 - `languageIds` fallback layer (~48 IDs) across all icon themes for broader file icon coverage via language mode.
 - `showLanguageModeIcons: true` on all icon themes to let language-contributed icons show through when no match exists.
@@ -28,7 +43,7 @@ All important modifications to this VSCode theme collection will be documented i
 ### Fixed
 - Madrid icon theme: removed dead `fileExtensions` entries (duplicate keys for `yml`/`yaml`, `ps1`).
 - Oslo icon theme: added missing `folderExpanded`, `rootFolder`, `rootFolderExpanded` properties.
-- Bogotá, Lahabana, Paris, Tokio themes: fixed duplicate internal `"name"` field.
+- Bogota, Lahabana, Paris, Tokio themes: fixed duplicate internal `"name"` field.
 - All 12 theme JSON files: renamed internal `"name"` to match filename.
 
 ## [1.1.3] - 2026-05-24

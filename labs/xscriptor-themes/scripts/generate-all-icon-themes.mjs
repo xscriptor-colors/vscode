@@ -20,7 +20,7 @@ const PALETTES = {
 
 // Skip tokio (same as x). Skip madrid + oslo (have original icon themes already)
 const TO_GENERATE = ["praha","berlin","london","helsinki","lahabana","miami","paris","bogota"];
-const DISPLAY = { lahabana:"Lahabana", tokio:"Tokio", praha:"Praha", bogota:"Bogotá" };
+const DISPLAY = { lahabana:"Lahabana", tokio:"Tokio", praha:"Praha", bogota:"Bogota" };
 const darkBg = "#0a0a0a";
 const lightFg = "#f7f1ff";
 

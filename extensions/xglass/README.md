@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/xscriptor/vscode/main/extensions/xglass/images/preview.png" alt="XGlass preview" width="860" />
+  <img src="https://raw.githubusercontent.com/xscriptor-colors/vscode/main/extensions/xglass/images/preview.png" alt="XGlass preview" width="860" />
 </p>
 
 <hr />
@@ -125,7 +125,7 @@ sudo pacman -S xorg-xprop
 
 <h2 id="installation">Installation</h2>
 <ul>
-  <li>Install from VSIX: <code>code --install-extension xglass-1.1.0.vsix</code></li>
+  <li>Install from VSIX: <code>code --install-extension xglass-1.1.1.vsix</code></li>
   <li>Or search for <strong>XGlass</strong> in the Extensions view.</li>
 </ul>
 
@@ -133,5 +133,5 @@ sudo pacman -S xorg-xprop
 <h2 align="center" id="x">X</h2>
 
 <a href="https://github.com/xscriptor">XGitHub</a> &middot;
-<a href="https://dev.xscriptor.com">XWeb</a>
+<a href="https://xscriptor.io">XWeb</a>
 </div>
