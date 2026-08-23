@@ -115,9 +115,9 @@ function activate(context) {
         return;
       }
 
+      const opacity = `0x${Math.round(0xffffffff * alpha / 255).toString(16)}`;
       for (const id of ids) {
-        cp.exec(
-          `xprop -id ${id} -f _NET_WM_WINDOW_OPACITY 32c -set _NET_WM_WINDOW_OPACITY $(printf 0x%x $((0xffffffff * ${alpha} / 255)))`,
+        cp.execFile('xprop', ['-id', id, '-f', '_NET_WM_WINDOW_OPACITY', '32c', '-set', '_NET_WM_WINDOW_OPACITY', opacity],
           async (error) => {
             if (error) {
               console.error('xglass(linux): xprop error', error);
