@@ -125,7 +125,7 @@ sudo pacman -S xorg-xprop
 
 <h2 id="installation">Installation</h2>
 <ul>
-  <li>Install from VSIX: <code>code --install-extension xglass-1.1.0.vsix</code></li>
+  <li>Install from VSIX: <code>code --install-extension xglass-1.1.1.vsix</code></li>
   <li>Or search for <strong>XGlass</strong> in the Extensions view.</li>
 </ul>
 

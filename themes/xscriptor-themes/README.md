@@ -110,7 +110,7 @@
 </ol>
 
 <p>Terminal install (VSIX):</p>
-<pre><code>code --install-extension xscriptor-themes-1.1.3.vsix</code></pre>
+<pre><code>code --install-extension xscriptor-themes-1.1.5.vsix</code></pre>
 
 <h2 align="center" align="center">Accessibility</h2>
 <p>

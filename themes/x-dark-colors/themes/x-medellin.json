@@ -371,8 +371,7 @@
 		"titleBar.inactiveForeground": "#525053",
 		"walkThrough.embeddedEditorBackground": "#000000",
 		"welcomePage.tileBackground": "#000000",
-		"widget.shadow": "#0a0a0a",
-		
+		"widget.shadow": "#0a0a0a"
 	},
 	"tokenColors": [
 		{

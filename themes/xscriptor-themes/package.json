@@ -2,7 +2,7 @@
   "name": "xscriptor-themes",
   "displayName": "Xscriptor Themes",
   "description": "Collection of themes for Visual Studio Code by Xscriptor.",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "publisher": "xscriptor",
   "license": "SEE LICENSE IN LICENSE",
   "engines": {
@@ -99,7 +99,7 @@
         "path": "./themes/paris.json"
       },
       {
-        "label": "Bogotá",
+        "label": "Bogota",
         "uiTheme": "vs-dark",
         "path": "./themes/bogota.json"
       }
@@ -157,7 +157,7 @@
       },
       {
         "id": "bogota-icons",
-        "label": "Bogotá",
+        "label": "Bogota",
         "path": "./icons/bogota.json"
       },
       {

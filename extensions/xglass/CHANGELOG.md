@@ -3,6 +3,11 @@
 All important modifications to this VSCode theme collection will be documented in this file.
 
 ---
+## [1.1.1] - 2026-08-23
+
+### Fixed
+- Removed the unused `node_modules/**` include pattern from package.json that prevented the extension from being packaged with `vsce`.
+
 ## [1.1.0] - 2026-04-01
 ### Added
 - Input clamping helpers for safer alpha and step handling

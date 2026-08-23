@@ -20,7 +20,7 @@ const P = {
 };
 
 const GEN_ALL = ["x","madrid","oslo","praha","berlin","london","helsinki","lahabana","miami","paris","bogota"];
-const DISPLAY = { lahabana:"Lahabana", praha:"Praha", bogota:"Bogotá", oslo:"Oslo" };
+const DISPLAY = { lahabana:"Lahabana", praha:"Praha", bogota:"Bogota", oslo:"Oslo" };
 
 function lum(h){ const r=parseInt(h.slice(1,3),16)/255,g=parseInt(h.slice(3,5),16)/255,b=parseInt(h.slice(5,7),16)/255; const L=c=>c<=0.03928?c/12.92:Math.pow((c+0.055)/1.055,2.4); return 0.2126*L(r)+0.7152*L(g)+0.0722*L(b); }
 function cr(a,b){ return (Math.max(a,b)+0.05)/(Math.min(a,b)+0.05); }
