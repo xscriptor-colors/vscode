@@ -132,6 +132,14 @@ sudo pacman -S xorg-xprop
 <div align="center">
 <h2 align="center" id="x">X</h2>
 
-<a href="https://github.com/xscriptor">XGitHub</a> &middot;
-<a href="https://xscriptor.io">XWeb</a>
+<a href="https://xscriptor.io">Web
+</a>
+ & 
+<a href="https://github.com/xscriptor">
+  Github
+</a>
+ & 
+<a href="https://www.xscriptor.com">
+  X
+</a>
 </div>
