@@ -6,7 +6,7 @@ Need help with themes, XGlass, or UI mods? Use the channels below.
 
 <h2>Get Help</h2>
 <ul>
-  <li>Open an issue: <a href="https://github.com/xscriptor/vscode/issues">github.com/xscriptor/vscode/issues</a></li>
+  <li>Open an issue: <a href="https://github.com/xscriptor-colors/vscode/issues">github.com/xscriptor-colors/vscode/issues</a></li>
   <li>Security reports: <a href="mailto:x@xscriptor.com">x@xscriptor.com</a> (private disclosure only)</li>
 </ul>
 

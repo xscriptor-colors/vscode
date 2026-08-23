@@ -30,13 +30,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/xscriptor/vscode",
+    "url": "https://github.com/xscriptor-colors/vscode",
     "directory": "themes/xscriptor-themes"
   },
   "bugs": {
-    "url": "https://github.com/xscriptor/vscode/issues"
+    "url": "https://github.com/xscriptor-colors/vscode/issues"
   },
-  "homepage": "https://github.com/xscriptor/vscode/tree/main/themes/xscriptor-themes",
+  "homepage": "https://github.com/xscriptor-colors/vscode/tree/main/themes/xscriptor-themes",
   "scripts": {
     "build:product-icons": "node icons/scripts/build-product-icons.mjs",
     "contrast:json": "node scripts/contrast-check.mjs --format json"

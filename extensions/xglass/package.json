@@ -17,10 +17,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/xscriptor/vscode.git"
+    "url": "https://github.com/xscriptor-colors/vscode.git"
   },
   "bugs": {
-    "url": "https://github.com/xscriptor/vscode/issues",
+    "url": "https://github.com/xscriptor-colors/vscode/issues",
     "email": "x@xscriptor.com"
   },
   "icon": "images/icon.png",

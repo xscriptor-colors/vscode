@@ -29,13 +29,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/xscriptor/vscode",
-    "directory": "vscodethemes/xdarkcolors"
+    "url": "https://github.com/xscriptor-colors/vscode",
+    "directory": "themes/x-dark-colors"
   },
   "bugs": {
-    "url": "https://github.com/xscriptor/vscode/issues"
+    "url": "https://github.com/xscriptor-colors/vscode/issues"
   },
-  "homepage": "https://github.com/xscriptor/vscode/tree/main/themes/x-dark-colors",
+  "homepage": "https://github.com/xscriptor-colors/vscode/tree/main/themes/x-dark-colors",
   "contributes": {
     "themes": [
       {

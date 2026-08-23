@@ -5,12 +5,12 @@
 </p>
 
 <h2>Previews</h2>
-<p align="center"><img src="https://raw.githubusercontent.com/xscriptor/vscode/refs/heads/main/themes/x-dark-colors/screenshots/preview01.png" alt="X Dark Colors preview 1" width="900" /></p>
-<p align="center"><img src="https://raw.githubusercontent.com/xscriptor/vscode/refs/heads/main/themes/x-dark-colors/screenshots/preview00.png" alt="X Dark Colors preview 2" width="900" /></p>
-<p align="center"><img src="https://raw.githubusercontent.com/xscriptor/vscode/refs/heads/main/themes/x-dark-colors/screenshots/preview03.png" alt="X Dark Colors preview 3" width="900" /></p>
-<p align="center"><img src="https://raw.githubusercontent.com/xscriptor/vscode/refs/heads/main/themes/x-dark-colors/screenshots/preview02.png" alt="X Dark Colors preview 4" width="900" /></p>
-<p align="center"><img src="https://raw.githubusercontent.com/xscriptor/vscode/refs/heads/main/themes/x-dark-colors/screenshots/preview05.png" alt="X Dark Colors preview 5" width="900" /></p>
-<p align="center"><img src="https://raw.githubusercontent.com/xscriptor/vscode/refs/heads/main/themes/x-dark-colors/screenshots/preview04.png" alt="X Dark Colors preview 6" width="900" /></p>
+<p align="center"><img src="https://raw.githubusercontent.com/xscriptor-colors/vscode/refs/heads/main/themes/x-dark-colors/screenshots/preview01.png" alt="X Dark Colors preview 1" width="900" /></p>
+<p align="center"><img src="https://raw.githubusercontent.com/xscriptor-colors/vscode/refs/heads/main/themes/x-dark-colors/screenshots/preview00.png" alt="X Dark Colors preview 2" width="900" /></p>
+<p align="center"><img src="https://raw.githubusercontent.com/xscriptor-colors/vscode/refs/heads/main/themes/x-dark-colors/screenshots/preview03.png" alt="X Dark Colors preview 3" width="900" /></p>
+<p align="center"><img src="https://raw.githubusercontent.com/xscriptor-colors/vscode/refs/heads/main/themes/x-dark-colors/screenshots/preview02.png" alt="X Dark Colors preview 4" width="900" /></p>
+<p align="center"><img src="https://raw.githubusercontent.com/xscriptor-colors/vscode/refs/heads/main/themes/x-dark-colors/screenshots/preview05.png" alt="X Dark Colors preview 5" width="900" /></p>
+<p align="center"><img src="https://raw.githubusercontent.com/xscriptor-colors/vscode/refs/heads/main/themes/x-dark-colors/screenshots/preview04.png" alt="X Dark Colors preview 6" width="900" /></p>
 
 <h2>Included Themes</h2>
 
@@ -71,16 +71,16 @@
 
 <h2>Contributing</h2>
 <p>
-  Report bugs or request improvements at <a href="https://github.com/xscriptor/vscode/issues">github.com/xscriptor/vscode/issues</a>.
+  Report bugs or request improvements at <a href="https://github.com/xscriptor-colors/vscode/issues">github.com/xscriptor-colors/vscode/issues</a>.
 </p>
 
 <h2 align="center">Related Documents</h2>
 
 <ul>
-  <li><a href="https://github.com/xscriptor/vscode/blob/main/themes/x-dark-colors/LICENSE">License</a></li>
-  <li><a href="https://github.com/xscriptor/vscode/blob/main/CODE_OF_CONDUCT.md">Code of Conduct</a></li>
-  <li><a href="https://github.com/xscriptor/vscode/blob/main/CONTRIBUTING.md">Contributions</a></li>
-  <li><a href="https://github.com/xscriptor/vscode/blob/main/ROADMAP.md">Roadmap</a></li>
+  <li><a href="https://github.com/xscriptor-colors/vscode/blob/main/themes/x-dark-colors/LICENSE">License</a></li>
+  <li><a href="https://github.com/xscriptor-colors/vscode/blob/main/CODE_OF_CONDUCT.md">Code of Conduct</a></li>
+  <li><a href="https://github.com/xscriptor-colors/vscode/blob/main/CONTRIBUTING.md">Contributions</a></li>
+  <li><a href="https://github.com/xscriptor-colors/vscode/blob/main/ROADMAP.md">Roadmap</a></li>
 </ul>
 
 
@@ -88,5 +88,5 @@
 <h2 align="center">X</h2>
 
 <a href="https://github.com/xscriptor">XGitHub</a> &middot;
-<a href="https://dev.xscriptor.com">XWeb</a>
+<a href="https://xscriptor.io">XWeb</a>
 </div>
