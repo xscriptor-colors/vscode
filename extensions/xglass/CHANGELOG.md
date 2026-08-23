@@ -5,8 +5,16 @@ All important modifications to this VSCode theme collection will be documented i
 ---
 ## [1.1.1] - 2026-08-23
 
-### Fixed
+### Added
+- Status bar item showing the current alpha level, updated after each change (click to increase transparency).
+
+### Changed
+- Linux X11: `xprop` is now invoked via `execFile` with separate arguments instead of a shell command string, avoiding shell interpolation.
+- Linux X11: window list is parsed directly from `xprop -root` output in JS, removing the dependency on `grep`.
 - Removed the unused `node_modules/**` include pattern from package.json that prevented the extension from being packaged with `vsce`.
+
+### Fixed
+- Wayland sessions now short-circuit with a clear "not supported" message instead of silently failing after a console warning.
 
 ## [1.1.0] - 2026-04-01
 ### Added

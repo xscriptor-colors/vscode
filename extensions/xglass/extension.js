@@ -21,6 +21,17 @@ function activate(context) {
   // Will be defined according to the platform, but accessible for commands
   let setAlpha = () => window.showErrorMessage('xglass: unsupported platform.');
 
+  // Status bar item showing current alpha
+  const statusItem = window.createStatusBarItem(window.StatusBarAlignment.Right, 100);
+  statusItem.command = 'xglass.increase';
+  statusItem.tooltip = 'xglass — click to increase transparency';
+  context.subscriptions.push(statusItem);
+  const updateStatus = (alpha) => {
+    statusItem.text = `$(circle-slash) xglass ${alpha}`;
+    statusItem.show();
+  };
+  updateStatus(clampAlpha(config().get('alpha')));
+
   if (process.platform === 'win32') {
     let ps = null;
     let typeLoaded = false;
@@ -52,6 +63,7 @@ function activate(context) {
 
         console.log(`xglass: set alpha ${alpha}`);
         await config().update('alpha', alpha, true);
+        updateStatus(alpha);
       } catch (err) {
         console.error(err);
         window.showErrorMessage(`xglass Error (win32): ${err}`);
@@ -70,6 +82,7 @@ function activate(context) {
   // show if is wayland
   if (process.env.XDG_SESSION_TYPE === 'wayland') {
     console.warn('xglass: Wayland session detected - not supported.');
+    setAlpha = () => window.showErrorMessage('xglass: Wayland is not supported. Use an X11/Xorg session.');
   }
 
   // obtain code window
@@ -87,7 +100,7 @@ function activate(context) {
       }
       if (!pids.length) return [];
 
-      const root = cp.execSync(`xprop -root | grep '_NET_CLIENT_LIST(WINDOW)'`).toString();
+      const root = cp.execSync(`xprop -root`).toString();
       const allIds = (root.match(/0x[\da-f]+/ig) || []);
       const codeIds = [];
 
@@ -116,8 +129,8 @@ function activate(context) {
       }
 
       for (const id of ids) {
-        cp.exec(
-          `xprop -id ${id} -f _NET_WM_WINDOW_OPACITY 32c -set _NET_WM_WINDOW_OPACITY $(printf 0x%x $((0xffffffff * ${alpha} / 255)))`,
+        const opacity = `0x${Math.round(0xffffffff * alpha / 255).toString(16)}`;
+        cp.execFile('xprop', ['-id', id, '-f', '_NET_WM_WINDOW_OPACITY', '32c', '-set', '_NET_WM_WINDOW_OPACITY', opacity],
           async (error) => {
             if (error) {
               console.error('xglass(linux): xprop error', error);
@@ -126,6 +139,7 @@ function activate(context) {
             }
             console.log(`xglass(linux): set alpha ${alpha}`);
             await config().update('alpha', alpha, true);
+            updateStatus(alpha);
           }
         );
       }
