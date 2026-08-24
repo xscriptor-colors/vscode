@@ -5,6 +5,11 @@ All notable changes to this repository will be documented in this file.
 
 ---
 
+## [2026-08-24]
+
+### Fixed
+- `xglass` 1.1.2: commands failed with "command 'xglass.*' not found" because activation crashed (`StatusBarAlignment` is a top-level API namespace, not part of `window`). Fixed activation, registered commands before platform setup, dropped the `node-powershell` dependency (now uses one-shot `powershell.exe`), reworked `SetTransparency.cs` to target windows via `EnumWindows`, and lowered the minimum VS Code version to `^1.60.0`.
+
 ## [2026-08-23] · Session
 
 ### Updated

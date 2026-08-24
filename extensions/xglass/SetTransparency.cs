@@ -1,7 +1,7 @@
-
 using System;
-using System.Runtime.InteropServices;
+using System.Collections.Generic;
 using System.Diagnostics;
+using System.Runtime.InteropServices;
 
 using Windows;
 
@@ -11,39 +11,41 @@ namespace xglass
     {
         public static bool SetTransparency(int pid, byte alpha)
         {
-            Process mainproc = Process.GetProcessById(pid);
-            foreach (Process proc in Process.GetProcessesByName(mainproc.ProcessName))
+            string processName;
+            try
             {
-                if (proc.StartInfo.FileName != mainproc.StartInfo.FileName)
-                {
-                    continue;
-                }
-
-                IntPtr hMainWnd = proc.MainWindowHandle;
-                if (hMainWnd == IntPtr.Zero)
-                {
-                    continue;
-                }
-
-                uint tid = User32.GetWindowThreadProcessId(hMainWnd, out pid);
-                bool result = User32.EnumThreadWindows(tid, delegate(IntPtr hWnd, IntPtr lParam) {
-                    if (!User32.IsWindowVisible(hWnd))
-                    {
-                        return true;
-                    }
-
-                    WS windowLong = User32.GetWindowLong(hWnd, GWL.EXSTYLE);
-                    User32.SetWindowLong(hWnd, GWL.EXSTYLE, windowLong | WS.EX_LAYERED);
-                    return User32.SetLayeredWindowAttributes(hWnd, 0, alpha, LWA.ALPHA);
-                }, IntPtr.Zero);
-
-                if (!result)
-                {
-                    return false;
-                }
+                processName = Process.GetProcessById(pid).ProcessName;
+            }
+            catch
+            {
+                return false;
             }
 
-            return true;
+            HashSet<int> targetPids = new HashSet<int>();
+            foreach (Process proc in Process.GetProcessesByName(processName))
+            {
+                targetPids.Add(proc.Id);
+            }
+            if (targetPids.Count == 0)
+            {
+                return false;
+            }
+
+            bool result = User32.EnumWindows(delegate(IntPtr hWnd, IntPtr lParam)
+            {
+                int windowPid;
+                User32.GetWindowThreadProcessId(hWnd, out windowPid);
+                if (!targetPids.Contains(windowPid) || !User32.IsWindowVisible(hWnd))
+                {
+                    return true;
+                }
+
+                WS windowLong = User32.GetWindowLong(hWnd, GWL.EXSTYLE);
+                User32.SetWindowLong(hWnd, GWL.EXSTYLE, windowLong | WS.EX_LAYERED);
+                return User32.SetLayeredWindowAttributes(hWnd, 0, alpha, LWA.ALPHA);
+            }, IntPtr.Zero);
+
+            return result;
         }
     }
 }
@@ -55,7 +57,7 @@ namespace Windows
         public delegate bool EnumWindowsProc(IntPtr hWnd, IntPtr lParam);
 
         [DllImport("user32.dll")]
-        public static extern bool EnumThreadWindows(uint dwThreadId, EnumWindowsProc lpEnumFunc, IntPtr lParam);
+        public static extern bool EnumWindows(EnumWindowsProc lpEnumFunc, IntPtr lParam);
 
         [DllImport("user32.dll")]
         public static extern uint GetWindowThreadProcessId(IntPtr hWnd, out int lpdwProcessId);
@@ -73,24 +75,18 @@ namespace Windows
         public static extern bool SetLayeredWindowAttributes(IntPtr hWnd, uint crKey, byte bAlpha, LWA dwFlags);
     }
 
-    internal enum GWL: int
+    internal enum GWL : int
     {
         EXSTYLE = -20,
-        HINSTANCE = -6,
-        HWNDPARENT = -8,
-        ID = -12,
-        STYLE = -16,
-        USERDATA = -21,
-        WNDPROC = -4,
     }
 
     [Flags]
-    internal enum WS: int
+    internal enum WS : int
     {
         EX_LAYERED = 0x80000,
     }
 
-    internal enum LWA: int
+    internal enum LWA : int
     {
         COLORKEY = 1,
         ALPHA = 2,

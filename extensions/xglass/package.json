@@ -2,11 +2,11 @@
   "name": "xglass",
   "displayName": "Xglass",
   "description": "Make of glass your editor",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "publisher": "xscriptor",
   "license": "MIT",
   "engines": {
-    "vscode": "^1.85.0"
+    "vscode": "^1.60.0"
   },
   "extensionKind": [
     "ui"
@@ -26,6 +26,14 @@
   "icon": "images/icon.png",
   "keywords": ["glass", "transparency", "blur", "xscriptor", "colors", "icons", "effects"],
   "main": "./extension.js",
+
+  "activationEvents": [
+    "onCommand:xglass.enable",
+    "onCommand:xglass.increase",
+    "onCommand:xglass.decrease",
+    "onCommand:xglass.max",
+    "onCommand:xglass.min"
+  ],
 
   "contributes": {
     "configuration": {
@@ -62,9 +70,7 @@
   },
   "scripts": {},
   "devDependencies": {},
-  "dependencies": {
-    "node-powershell": "^4.0.0"
-  },
+  "dependencies": {},
 
   "files": [
     "extension.js",
