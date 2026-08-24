@@ -1,4 +1,4 @@
-const { workspace, window, commands } = require('vscode');
+const { workspace, window, commands, StatusBarAlignment } = require('vscode');
 
 function clampAlpha(value) {
   const n = Number(value);
@@ -22,7 +22,7 @@ function activate(context) {
   let setAlpha = () => window.showErrorMessage('xglass: unsupported platform.');
 
   // Status bar item showing current alpha
-  const statusItem = window.createStatusBarItem(window.StatusBarAlignment.Right, 100);
+  const statusItem = window.createStatusBarItem(StatusBarAlignment.Right, 100);
   statusItem.command = 'xglass.increase';
   statusItem.tooltip = 'xglass — click to increase transparency';
   context.subscriptions.push(statusItem);
@@ -32,42 +32,53 @@ function activate(context) {
   };
   updateStatus(clampAlpha(config().get('alpha')));
 
-  if (process.platform === 'win32') {
-    let ps = null;
-    let typeLoaded = false;
+  // ---- Commands (registered before platform setup so they can never be missing) ----
+  context.subscriptions.push(commands.registerCommand('xglass.enable', () => {
+    return setAlpha(200);
+  }));
 
-    const ensureWinReady = async () => {
-      if (!ps) {
-        const shell = require('node-powershell');
-        ps = new shell({ executionPolicy: 'RemoteSigned', noProfile: true });
-        context.subscriptions.push(ps);
-      }
-      if (!typeLoaded) {
-        const path = context.asAbsolutePath('./SetTransparency.cs');
-        ps.addCommand('[Console]::OutputEncoding = [Text.Encoding]::UTF8');
-        ps.addCommand(`Add-Type -Path '${path}'`);
-        await ps.invoke().finally(() => { ps.commands = []; });
-        typeLoaded = true;
-      }
-    };
+  context.subscriptions.push(commands.registerCommand('xglass.increase', () => {
+    const alpha = clampAlpha(config().get('alpha')) - clampStep(config().get('step'));
+    return setAlpha(alpha);
+  }));
+
+  context.subscriptions.push(commands.registerCommand('xglass.decrease', () => {
+    const alpha = clampAlpha(config().get('alpha')) + clampStep(config().get('step'));
+    return setAlpha(alpha);
+  }));
+
+  context.subscriptions.push(commands.registerCommand('xglass.max', () => setAlpha(1)));
+  context.subscriptions.push(commands.registerCommand('xglass.min', () => setAlpha(255)));
+
+  console.log('xglass: commands registered');
+
+  if (process.platform === 'win32') {
+    const { execFile } = require('child_process');
+    const psFile = context.asAbsolutePath('./SetTransparency.cs');
+
+    const runPowerShell = (script) => new Promise((resolve, reject) => {
+      execFile(
+        'powershell.exe',
+        ['-NoProfile', '-ExecutionPolicy', 'Bypass', '-NonInteractive', '-Command', script],
+        { timeout: 20000, windowsHide: true, maxBuffer: 1024 * 1024 },
+        (error, stdout, stderr) => {
+          if (error) {
+            reject(new Error((stderr && stderr.trim()) || error.message));
+            return;
+          }
+          resolve(stdout);
+        }
+      );
+    });
 
     setAlpha = async (alpha) => {
-      try {
-        alpha = clampAlpha(alpha);
+      alpha = clampAlpha(alpha);
+      const script = `Add-Type -Path '${psFile}'; [xglass.SetTransParency]::SetTransparency(${process.pid}, ${alpha}) | Out-Null`;
+      await runPowerShell(script);
 
-        await ensureWinReady();
-
-        // Correct C# method name! SetTransparency
-        ps.addCommand(`[xglass.SetTransParency]::SetTransparency(${process.pid}, ${alpha})`);
-        await ps.invoke().finally(() => { ps.commands = []; });
-
-        console.log(`xglass: set alpha ${alpha}`);
-        await config().update('alpha', alpha, true);
-        updateStatus(alpha);
-      } catch (err) {
-        console.error(err);
-        window.showErrorMessage(`xglass Error (win32): ${err}`);
-      }
+      console.log(`xglass: set alpha ${alpha}`);
+      await config().update('alpha', alpha, true);
+      updateStatus(alpha);
     };
   } else if (process.platform === 'linux') {
   const cp = require('child_process');
@@ -153,25 +164,6 @@ function activate(context) {
 
 
   console.log('xglass VSC active');
-
-  // ---- Commands (trigger activation) ----
-  context.subscriptions.push(commands.registerCommand('xglass.enable', () => {
-    setAlpha(200);
-  }));
-
-  context.subscriptions.push(commands.registerCommand('xglass.increase', () => {
-    const alpha = clampAlpha(config().get('alpha')) - clampStep(config().get('step'));
-    setAlpha(alpha);
-  }));
-
-  context.subscriptions.push(commands.registerCommand('xglass.decrease', () => {
-    const alpha = clampAlpha(config().get('alpha')) + clampStep(config().get('step'));
-    setAlpha(alpha);
-  }));
-
-  context.subscriptions.push(commands.registerCommand('xglass.max', () => setAlpha(1)));
-  context.subscriptions.push(commands.registerCommand('xglass.min', () => setAlpha(255)));
-
 }
 
 exports.activate = activate;

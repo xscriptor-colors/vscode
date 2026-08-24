@@ -3,6 +3,15 @@
 All important modifications to this VSCode theme collection will be documented in this file.
 
 ---
+## [1.1.2] - 2026-08-24
+
+### Fixed
+- Fixed extension activation on all VS Code versions >= 1.60: `StatusBarAlignment` is a top-level API namespace, not a member of `window` — the previous `window.StatusBarAlignment.Right` threw inside `activate()` before commands were registered, so every command failed with "command 'xglass.*' not found".
+- Lowered the minimum VS Code version from `^1.85.0` to `^1.60.0`. On older builds the extension was treated as incompatible and never activated.
+- Commands are now registered before any platform setup so they can never be left unregistered.
+- Windows: commands no longer fail with "Command failed" errors. Replaced the fragile `node-powershell` dependency (persistent `-NoExit` session with unreliable error detection) with a one-shot `powershell.exe` invocation via `child_process`, surfacing the real error message when something goes wrong.
+- Windows: `SetTransparency.cs` no longer compares `Process.StartInfo.FileName` (which can throw or silently filter out every window). It now targets VS Code windows directly with `EnumWindows`, matching window owners by process name.
+
 ## [1.1.1] - 2026-08-23
 
 ### Added
