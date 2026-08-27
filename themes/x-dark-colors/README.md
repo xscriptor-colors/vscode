@@ -88,5 +88,5 @@
 <h2 align="center">X</h2>
 
 <a href="https://github.com/xscriptor">XGitHub</a> &middot;
-<a href="https://xscriptor.io">XWeb</a>
+<a href="https://xscriptor.io">Dev</a>
 </div>
