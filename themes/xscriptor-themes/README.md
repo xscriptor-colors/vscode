@@ -142,7 +142,7 @@
 <div id="x" align="center">
 <h2 align="center">X</h2>
 
-<a href="https://xscriptor.io">Web
+<a href="https://xscriptor.io">Dev
 </a>
  & 
 <a href="https://github.com/xscriptor">
