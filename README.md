@@ -1,8 +1,10 @@
-<h1 align="center"> Visual Studio Code  <img src="https://raw.githubusercontent.com/xscriptor-colors/web/main/public/svg/icons/vscode.svg" width="20" alt="Xscriptor logo" />
+<h1 align="center"> Visual Studio Code  <img src="https://raw.githubusercontent.com/xscriptor-colors/web/main/public/svg/icons/vscode.svg?v=2" width="20" alt="Xscriptor logo" />
 </h1>
-
 <p align="center">
   Improve accessibility and visual customization in Visual Studio Code with the Xscriptor ecosystem: themes, icons, transparency, and lightweight UI tweaks.
+</p>
+<p align="center">
+<img src= "https://xscriptor-colors.github.io/web/images/gifs/vscode/vscode-prompt.gif"height="60" alt="animation">
 </p>
 
 <p align="center">
