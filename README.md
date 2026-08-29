@@ -3,9 +3,6 @@
 <p align="center">
   Improve accessibility and visual customization in Visual Studio Code with the Xscriptor ecosystem: themes, icons, transparency, and lightweight UI tweaks.
 </p>
-<p align="center">
-<img src= "https://xscriptor-colors.github.io/web/images/gifs/vscode/vscode-prompt.gif"height="60" alt="animation">
-</p>
 
 <p align="center">
   <img alt="VS Code" src="https://img.shields.io/badge/VS%20Code-007ACC?logo=visualstudiocode&logoColor=white" />
