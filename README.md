@@ -1,8 +1,5 @@
-<h1 align="center">VSCode Xscriptor</h1>
-
-<p align="center">
-  <img src="./assets/icon.png" width="56" alt="Xscriptor logo" />
-</p>
+<h1 align="center"> Visual Studio Code  <img src="./assets/icon.png" width="20" alt="Xscriptor logo" />
+</h1>
 
 <p align="center">
   Improve accessibility and visual customization in Visual Studio Code with the Xscriptor ecosystem: themes, icons, transparency, and lightweight UI tweaks.
@@ -51,16 +48,16 @@
 
 <h2 align="center" id="previews">Previews</h2>
 <div align="center">
-<a href="https://imgur.com/xKWZvYn">
-<img src="https://i.imgur.com/0e0Ifob.gif" width="900" alt="Demo" >
+<a href="https://marketplace.visualstudio.com/items?itemName=xscriptor.xscriptor-themes">
+<img src="https://xscriptor-colors.github.io/web/images/vscode/preview3.gif" width="900" alt="Demo" >
 </a>
 <hr />
-<a href="https://imgur.com/xKWZvYn">
-<img src="https://i.imgur.com/ndPKOgr.gif" width="900" alt="Demo" >
+<a href="https://marketplace.visualstudio.com/items?itemName=xscriptor.xscriptor-themes">
+<img src="https://xscriptor-colors.github.io/web/images/vscode/preview1.gif" width="900" alt="Demo" >
 </a>
 <hr />
-<a href="https://imgur.com/xKWZvYn">
-<img src="https://i.imgur.com/refvlZa.gif" width="900" alt="Demo" >
+<a href="https://marketplace.visualstudio.com/items?itemName=xscriptor.xscriptor-themes">
+<img src="https://xscriptor-colors.github.io/web/images/vscode/preview2.gif" width="900" alt="Demo" >
 </a>
 </div>
 

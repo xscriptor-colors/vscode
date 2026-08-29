@@ -6,16 +6,16 @@
 
 <h2 align="center">Previews</h2>
 <div align="center">
-<a href="https://imgur.com/xKWZvYn">
-<img src="https://i.imgur.com/0e0Ifob.gif" width="900" alt="Demo" >
+<a href="https://marketplace.visualstudio.com/items?itemName=xscriptor.xscriptor-themes">
+<img src="https://xscriptor-colors.github.io/web/images/vscode/preview3.gif" width="900" alt="Demo" >
 </a>
 <hr />
-<a href="https://imgur.com/xKWZvYn">
-<img src="https://i.imgur.com/ndPKOgr.gif" width="900" alt="Demo" >
+<a href="https://marketplace.visualstudio.com/items?itemName=xscriptor.xscriptor-themes">
+<img src="https://xscriptor-colors.github.io/web/images/vscode/preview1.gif" width="900" alt="Demo" >
 </a>
 <hr />
-<a href="https://imgur.com/xKWZvYn">
-<img src="https://i.imgur.com/refvlZa.gif" width="900" alt="Demo" >
+<a href="https://marketplace.visualstudio.com/items?itemName=xscriptor.xscriptor-themes">
+<img src="https://xscriptor-colors.github.io/web/images/vscode/preview2.gif" width="900" alt="Demo" >
 </a>
 </div>
 
