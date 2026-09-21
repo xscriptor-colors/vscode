@@ -42,6 +42,7 @@
   <li><code>themes/</code>: Theme collections (<code>xscriptor-themes</code>, <code>x-dark-colors</code>).</li>
   <li><code>extensions/</code>: VS Code extension packages (currently <code>xglass</code>).</li>
   <li><code>ui-mods/</code>: CSS and JS custom UI tweaks for Custom UI Style setups.</li>
+  <li><code>mods/</code>: System-level mods (Linux/Wayland launchers, flags, wrappers).</li>
   <li><code>assets/</code>: Shared previews and branding assets.</li>
 </ul>
 
