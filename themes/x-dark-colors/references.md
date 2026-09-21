@@ -552,29 +552,6 @@
 }
 ```
 
-## Seoul
-
-```json
-{
-    "color0":  "#0f0f1a",
-    "color1":  "#cd2e3a",
-    "color2":  "#0047a0",
-    "color3":  "#cd2e3a",
-    "color4":  "#0047a0",
-    "color5":  "#cd2e3a",
-    "color6":  "#0047a0",
-    "color7":  "#e6e6f2",
-    "color8":  "#3b3b5c",
-    "color9":  "#e64552",
-    "color10": "#3373cc",
-    "color11": "#e64552",
-    "color12": "#3373cc",
-    "color13": "#e64552",
-    "color14": "#3373cc",
-    "color15": "#ffffff"
-}
-```
-
 ## Mumbai
 
 ```json

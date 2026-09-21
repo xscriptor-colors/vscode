@@ -159,11 +159,6 @@
         "path": "./themes/x-osaka.json"
       },
       {
-        "label": "X Seoul",
-        "uiTheme": "vs",
-        "path": "./themes/x-seoul.json"
-      },
-      {
         "label": "X Mumbai",
         "uiTheme": "vs",
         "path": "./themes/x-mumbai.json"

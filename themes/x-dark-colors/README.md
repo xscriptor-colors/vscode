@@ -44,7 +44,6 @@
   <li>X Moscow</li>
   <li>X Dubai</li>
   <li>X Osaka</li>
-  <li>X Seoul</li>
   <li>X Mumbai</li>
   <li>X Bangkok</li>
   <li>X Singapore</li>
