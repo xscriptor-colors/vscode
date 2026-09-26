@@ -51,7 +51,6 @@
   <li>Madrid</li>
   <li>Helsinki</li>
   <li>London</li>
-  <li>Colors</li>
 </ul>
 
 <h3>Dark Themes</h3>

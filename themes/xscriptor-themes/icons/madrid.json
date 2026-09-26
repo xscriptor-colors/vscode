@@ -244,6 +244,9 @@
     "folder-obj": {
       "iconPath": "./madrid/folder-obj.svg"
     },
+    "folder-open": {
+      "iconPath": "./madrid/folder-open.svg"
+    },
     "folder-out": {
       "iconPath": "./madrid/folder-out.svg"
     },
@@ -348,6 +351,9 @@
     },
     "font": {
       "iconPath": "./madrid/font.svg"
+    },
+    "github": {
+      "iconPath": "./madrid/github.svg"
     },
     "gitignore": {
       "iconPath": "./madrid/gitignore.svg"
@@ -513,16 +519,13 @@
     },
     "yarn": {
       "iconPath": "./madrid/yarn.svg"
-    },
-    "github": {
-      "iconPath": "./madrid/github.svg"
     }
   },
   "file": "file",
   "folder": "folder",
-  "folderExpanded": "folder",
+  "folderExpanded": "folder-open",
   "rootFolder": "folder",
-  "rootFolderExpanded": "folder",
+  "rootFolderExpanded": "folder-open",
   "fileExtensions": {
     "jsx": "jsx",
     "tsx": "tsx",
@@ -914,6 +917,56 @@
     ".openapi": "folder-github",
     ".redoc": "folder-github"
   },
+  "languageIds": {
+    "javascript": "js",
+    "typescript": "ts",
+    "javascriptreact": "jsx",
+    "typescriptreact": "tsx",
+    "mdx": "mdx",
+    "css": "css",
+    "scss": "scss",
+    "sass": "sass",
+    "less": "less",
+    "stylus": "stylus",
+    "html": "html",
+    "json": "json",
+    "jsonc": "json",
+    "python": "python",
+    "markdown": "markdown",
+    "php": "php",
+    "java": "java",
+    "c": "c",
+    "cpp": "cpp",
+    "go": "go",
+    "rust": "rust",
+    "ruby": "ruby",
+    "csharp": "csharp",
+    "kotlin": "kotlin",
+    "swift": "swift",
+    "sql": "sql",
+    "shellscript": "bash",
+    "dart": "dart",
+    "scala": "scala",
+    "perl": "perl",
+    "r": "r",
+    "objective-c": "objectivec",
+    "matlab": "matlab",
+    "haskell": "haskell",
+    "elixir": "elixir",
+    "yaml": "yaml",
+    "xml": "xml",
+    "csv": "csv",
+    "dockerfile": "docker",
+    "dockercompose": "docker",
+    "powershell": "powershell",
+    "lua": "lua",
+    "cobol": "cobol",
+    "vue": "vue",
+    "svelte": "svelte",
+    "astro": "astro",
+    "graphql": "graphql",
+    "prisma": "prisma"
+  },
   "folderNamesExpanded": {
     "src": "folder-src",
     "source": "folder-src",
@@ -1157,55 +1210,5 @@
     ".gradio": "folder-github",
     ".openapi": "folder-github",
     ".redoc": "folder-github"
-  },
-  "languageIds": {
-    "javascript": "js",
-    "typescript": "ts",
-    "javascriptreact": "jsx",
-    "typescriptreact": "tsx",
-    "mdx": "mdx",
-    "css": "css",
-    "scss": "scss",
-    "sass": "sass",
-    "less": "less",
-    "stylus": "stylus",
-    "html": "html",
-    "json": "json",
-    "jsonc": "json",
-    "python": "python",
-    "markdown": "markdown",
-    "php": "php",
-    "java": "java",
-    "c": "c",
-    "cpp": "cpp",
-    "go": "go",
-    "rust": "rust",
-    "ruby": "ruby",
-    "csharp": "csharp",
-    "kotlin": "kotlin",
-    "swift": "swift",
-    "sql": "sql",
-    "shellscript": "bash",
-    "dart": "dart",
-    "scala": "scala",
-    "perl": "perl",
-    "r": "r",
-    "objective-c": "objectivec",
-    "matlab": "matlab",
-    "haskell": "haskell",
-    "elixir": "elixir",
-    "yaml": "yaml",
-    "xml": "xml",
-    "csv": "csv",
-    "dockerfile": "docker",
-    "dockercompose": "docker",
-    "powershell": "powershell",
-    "lua": "lua",
-    "cobol": "cobol",
-    "vue": "vue",
-    "svelte": "svelte",
-    "astro": "astro",
-    "graphql": "graphql",
-    "prisma": "prisma"
   }
 }
