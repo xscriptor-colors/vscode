@@ -1,7 +1,8 @@
 import fs from "fs";
 import path from "path";
+import { fileURLToPath } from "url";
 
-const ROOT = process.cwd();
+const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../../..");
 const LAB = path.join(ROOT, "labs/xscriptor-themes/preview-icons");
 const LOGOS = path.join(LAB, "logos-src");
 const OUT = path.join(LAB, "index.html");

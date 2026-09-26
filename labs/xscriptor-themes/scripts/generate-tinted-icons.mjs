@@ -1,7 +1,8 @@
 import fs from "fs";
 import path from "path";
+import { fileURLToPath } from "url";
 
-const ROOT = process.cwd();
+const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../../..");
 const EXT = "themes/xscriptor-themes";
 const LAB = path.join(ROOT, "labs/xscriptor-themes");
 const STAGE = path.join(LAB, "tinted-preview");
@@ -80,11 +81,10 @@ const FOLDER_OVERLAY = {
   sveltekit: ["svelte", 4],
 };
 
-const existing = fs.readdirSync(path.join(ROOT, EXT, "icons/colors")).filter((f) => f.endsWith(".svg")).map((f) => f.replace(/\.svg$/, ""));
-const FILE_IDS = existing.filter((id) => !id.startsWith("folder"));
-const FOLDER_IDS = existing.filter((id) => id.startsWith("folder-"));
-
 const baseManifest = JSON.parse(fs.readFileSync(path.join(ROOT, EXT, "icons/paris.json"), "utf8"));
+const existing = Object.keys(baseManifest.iconDefinitions);
+const FILE_IDS = existing.filter((id) => !id.startsWith("folder"));
+const FOLDER_IDS = existing.filter((id) => id.startsWith("folder-") && id !== "folder-open");
 const esc = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 const labelFs = (l) => (l.length <= 1 ? 12 : l.length === 2 ? 10 : l.length === 3 ? 8.2 : 6.8);
 const FONT = "-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif";

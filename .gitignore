@@ -19,3 +19,6 @@ yarn-error.log*
 # System files
 .DS_Store
 Thumbs.db
+
+# Generated labs output (rebuild with labs/xscriptor-themes/scripts/generate-tinted-icons.mjs)
+labs/xscriptor-themes/tinted-preview/
