@@ -2,7 +2,7 @@
   "name": "xscriptor-themes",
   "displayName": "Xscriptor Themes",
   "description": "Collection of themes for Visual Studio Code by Xscriptor.",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "publisher": "xscriptor",
   "license": "SEE LICENSE IN LICENSE",
   "engines": {
@@ -114,11 +114,6 @@
         "id": "oslo-icons",
         "label": "Oslo",
         "path": "./icons/oslo.json"
-      },
-      {
-        "id": "colors-icons",
-        "label": "Colors",
-        "path": "./icons/colors.json"
       },
       {
         "id": "praha-icons",

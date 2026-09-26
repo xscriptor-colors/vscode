@@ -1,5 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
-  <path fill="#795548" d="M10,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V8C22,6.89 21.1,6 20,6H12L10,4Z"/>
-  <text x="12" y="14" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="4" font-weight="bold">x</text>
-  <text x="18" y="10" text-anchor="end" fill="#ffffff" font-family="Arial, sans-serif" font-size="3" font-weight="bold" opacity="0.8">OUT</text>
-</svg>

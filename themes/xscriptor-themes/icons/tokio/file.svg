@@ -1,5 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
-  <rect x="0" y="0" width="24" height="24" fill="#fd9353" rx="3" ry="3"/>
-  <text x="12" y="15.15" text-anchor="middle" fill="#0a0a0a" font-family="Arial, sans-serif" font-size="9" font-weight="bold">F</text>
-  <text x="21" y="7" text-anchor="middle" fill="#0a0a0a" font-family="Arial, sans-serif" font-size="4" font-weight="bold" opacity="0.8">x</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"><g fill="#fce566"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9l-7-7zm0 2.5L17.5 9H13V4.5zM8 13h8v1.6H8V13zm0 3.2h8v1.6H8v-1.6zm0-6.4h4v1.6H8V9.8z"/></g><text x="20.5" y="6.5" fill="#fce566" stroke="#191919" stroke-width="1" paint-order="stroke" stroke-linejoin="round" opacity="0.85" text-anchor="middle" dominant-baseline="central" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-weight="700" font-size="6.4">x</text></svg>

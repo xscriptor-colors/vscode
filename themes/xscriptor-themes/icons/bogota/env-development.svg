@@ -1,5 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
-  <rect x="0" y="0" width="24" height="24" fill="#ff9999" rx="3" ry="3"/>
-  <text x="12" y="14.45" text-anchor="middle" fill="#0a0a0a" font-family="Arial, sans-serif" font-size="7" font-weight="bold">ENV</text>
-  <text x="21" y="7" text-anchor="middle" fill="#0a0a0a" font-family="Arial, sans-serif" font-size="4" font-weight="bold" opacity="0.8">x</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"><rect x="0" y="0" width="24" height="24" rx="4.5" fill="#ff9999"/><text x="12" y="12.4" fill="#0a0a0a" text-anchor="middle" dominant-baseline="central" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-weight="700" font-size="8.2" letter-spacing="-0.35">ENV</text><text x="20.5" y="6.5" fill="#0a0a0a" opacity="0.8" text-anchor="middle" dominant-baseline="central" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-weight="700" font-size="6.4">x</text></svg>

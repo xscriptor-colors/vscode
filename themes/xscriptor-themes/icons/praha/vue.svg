@@ -1,5 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
-  <rect x="0" y="0" width="24" height="24" fill="#8BE9FD" rx="3" ry="3"/>
-  <text x="12" y="14.45" text-anchor="middle" fill="#0a0a0a" font-family="Arial, sans-serif" font-size="7" font-weight="bold">VUE</text>
-  <text x="21" y="7" text-anchor="middle" fill="#0a0a0a" font-family="Arial, sans-serif" font-size="4" font-weight="bold" opacity="0.8">x</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"><g fill="#B8E6A0"><path d="M24,1.61H14.06L12,5.16,9.94,1.61H0L12,22.39ZM12,14.08,5.16,2.23H9.59L12,6.41l2.41-4.18h4.43Z"/></g><text x="20.5" y="6.5" fill="#B8E6A0" stroke="#1A1A1A" stroke-width="1" paint-order="stroke" stroke-linejoin="round" opacity="0.85" text-anchor="middle" dominant-baseline="central" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-weight="700" font-size="6.4">x</text></svg>

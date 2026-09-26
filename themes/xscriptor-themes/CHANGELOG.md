@@ -3,6 +3,25 @@
 All important modifications to this VSCode theme collection will be documented in this file.
 
 ---
+## [1.1.6] - 2026-09-26
+
+### Added
+- Tinted icon system: real file-type logos (Simple Icons, CC0) recolored with each icon theme's own palette, with automatic contrast adjustment against the theme background.
+- Folder icons rebuilt from Bootstrap Icons (MIT) and tinted per palette, now with an open variant (`folderExpanded` / `rootFolderExpanded` resolve to `folder-open`).
+- Category overlays on folders: npm, Jest, React, SVG, Git, Python, PHP, Java, Rust, Docker, MySQL, HTML, CSS, Bash, PowerShell and Svelte.
+
+### Changed
+- All 12 palette icon themes regenerated with 173 icons each (tinted logos for supported languages plus palette-tinted badges for the rest), replacing the letter-only tiles.
+- Brand `x` marker kept in every file and folder icon at legible size, with a contrast edge on glyph-only logos.
+- Berlin and London stay monochrome (their grayscale palettes are preserved).
+- Per-theme icon maps (`fileExtensions`, `fileNames`, `folderNames`, `languageIds`) preserved, including Tokio's specific mappings.
+
+### Removed
+- **Colors** icon theme: it was the same icon set as circle badges fixed to the X palette, mismatched with light themes. `colors-icons` is no longer offered.
+
+### Fixed
+- Folder icons are now palette-tinted; previously they were copied unchanged across themes with a hardcoded `#ffc107` fill and an illegible 2.7px `x` marker.
+
 ## [1.1.5] - 2026-08-23
 
 ### Added
