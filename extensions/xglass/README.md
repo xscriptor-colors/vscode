@@ -51,6 +51,9 @@ sudo dnf install xorg-x11-utils
 # Debian/Ubuntu
 sudo apt install x11-utils
 
+# X Linux
+sudo xpm -S xorg-xprop
+
 # Arch
 sudo pacman -S xorg-xprop
 </code></pre>
